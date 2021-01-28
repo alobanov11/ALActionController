@@ -32,7 +32,7 @@ https://github.com/alobanov11/ALActionController
 
 ### CocoaPods:
 
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate `SPAlert` into your Xcode project using CocoaPods, specify it in your `Podfile`:
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate `ALActionController` into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 pod 'ALActionController'
