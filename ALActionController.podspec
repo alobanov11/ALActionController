@@ -16,6 +16,6 @@ This library helps you custom your actionSheet controller.
   spec.swift_version = "4.2"
 
   spec.source        = { :git => "https://github.com/alobanov11/ALActionController.git", :tag => "#{spec.version}" }
-  spec.source_files  = "ALActionController/**/*.{h,m,swift}"
+  spec.source_files  = "Sources/**/*.{h,m,swift}"
 
 end
