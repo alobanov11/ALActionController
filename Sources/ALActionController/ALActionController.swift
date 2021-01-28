@@ -288,8 +288,8 @@ public final class ALActionController: UIViewController
 			var action = action
 			let originalHandler = action.handler
 			action.handler = { [weak self] in
-				originalHandler?()
 				self?.handleDismissTap()
+				originalHandler?()
 			}
 			return action
 		}

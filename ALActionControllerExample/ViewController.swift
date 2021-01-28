@@ -12,7 +12,7 @@ class ViewController: UIViewController
 			actions: [
 				.init(title: "Горячее", selected: true, icon: #imageLiteral(resourceName: "icon3")),
 				.init(title: "Новое", icon: #imageLiteral(resourceName: "icon4")),
-				.init(title: "Лучшее", icon: #imageLiteral(resourceName: "icon5")),
+				.init(title: "Лучшее", icon: #imageLiteral(resourceName: "icon5"), handler: { [weak self] in self?.didTapOnSecondButton(sender) }),
 				.init(title: "Отмена", style: .cancel),
 			],
 			styles: .init(
