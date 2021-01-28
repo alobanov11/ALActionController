@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E22409C525C2A403000D7F0E"
-               BuildableName = "ALActionController.framework"
-               BlueprintName = "ALActionController"
+               BlueprintIdentifier = "E2240A3125C2A558000D7F0E"
+               BuildableName = "ALActionControllerExample.app"
+               BlueprintName = "ALActionControllerExample"
                ReferencedContainer = "container:ALActionController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E2240A9725C2AE8C000D7F0E"
-               BuildableName = "ALActionControllerTests.xctest"
-               BlueprintName = "ALActionControllerTests"
-               ReferencedContainer = "container:ALActionController.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E2240A3125C2A558000D7F0E"
+            BuildableName = "ALActionControllerExample.app"
+            BlueprintName = "ALActionControllerExample"
+            ReferencedContainer = "container:ALActionController.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E22409C525C2A403000D7F0E"
-            BuildableName = "ALActionController.framework"
-            BlueprintName = "ALActionController"
+            BlueprintIdentifier = "E2240A3125C2A558000D7F0E"
+            BuildableName = "ALActionControllerExample.app"
+            BlueprintName = "ALActionControllerExample"
             ReferencedContainer = "container:ALActionController.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E22409D025C2A403000D7F0E /* ALActionController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22409C625C2A403000D7F0E /* ALActionController.framework */; };
-		E22409D525C2A403000D7F0E /* ALActionControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22409D425C2A403000D7F0E /* ALActionControllerTests.swift */; };
 		E22409D725C2A403000D7F0E /* ALActionController.h in Headers */ = {isa = PBXBuildFile; fileRef = E22409C925C2A403000D7F0E /* ALActionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2240A3525C2A558000D7F0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2240A3425C2A558000D7F0E /* AppDelegate.swift */; };
 		E2240A3725C2A558000D7F0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2240A3625C2A558000D7F0E /* SceneDelegate.swift */; };
@@ -19,17 +17,20 @@
 		E2240A4A25C2A73C000D7F0E /* ALActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2240A4925C2A73C000D7F0E /* ALActionController.swift */; };
 		E2240A5225C2AA2F000D7F0E /* ALActionController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22409C625C2A403000D7F0E /* ALActionController.framework */; };
 		E2240A5325C2AA2F000D7F0E /* ALActionController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E22409C625C2A403000D7F0E /* ALActionController.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E2240A9B25C2AE8C000D7F0E /* ALActionControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2240A9A25C2AE8C000D7F0E /* ALActionControllerTests.swift */; };
+		E2240A9D25C2AE8C000D7F0E /* ALActionController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22409C625C2A403000D7F0E /* ALActionController.framework */; platformFilter = ios; };
+		E2240AA925C2AEEA000D7F0E /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2240AA825C2AEEA000D7F0E /* XCTestManifests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E22409D125C2A403000D7F0E /* PBXContainerItemProxy */ = {
+		E2240A5425C2AA2F000D7F0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E22409BD25C2A403000D7F0E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E22409C525C2A403000D7F0E;
 			remoteInfo = ALActionController;
 		};
-		E2240A5425C2AA2F000D7F0E /* PBXContainerItemProxy */ = {
+		E2240A9E25C2AE8C000D7F0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E22409BD25C2A403000D7F0E /* Project object */;
 			proxyType = 1;
@@ -56,9 +57,6 @@
 		E22409C625C2A403000D7F0E /* ALActionController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALActionController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22409C925C2A403000D7F0E /* ALActionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALActionController.h; sourceTree = "<group>"; };
 		E22409CA25C2A403000D7F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E22409CF25C2A403000D7F0E /* ALActionControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALActionControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E22409D425C2A403000D7F0E /* ALActionControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALActionControllerTests.swift; sourceTree = "<group>"; };
-		E22409D625C2A403000D7F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2240A3225C2A558000D7F0E /* ALActionControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALActionControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2240A3425C2A558000D7F0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2240A3625C2A558000D7F0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +66,10 @@
 		E2240A4025C2A559000D7F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2240A4225C2A559000D7F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2240A4925C2A73C000D7F0E /* ALActionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALActionController.swift; sourceTree = "<group>"; };
+		E2240A9825C2AE8C000D7F0E /* ALActionControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALActionControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2240A9A25C2AE8C000D7F0E /* ALActionControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALActionControllerTests.swift; sourceTree = "<group>"; };
+		E2240A9C25C2AE8C000D7F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2240AA825C2AEEA000D7F0E /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,14 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E22409CC25C2A403000D7F0E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E22409D025C2A403000D7F0E /* ALActionController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,15 +88,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2240A9525C2AE8C000D7F0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2240A9D25C2AE8C000D7F0E /* ALActionController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E22409BC25C2A403000D7F0E = {
 			isa = PBXGroup;
 			children = (
-				E22409C825C2A403000D7F0E /* ALActionController */,
-				E22409D325C2A403000D7F0E /* ALActionControllerTests */,
 				E2240A3325C2A558000D7F0E /* ALActionControllerExample */,
+				E2240A6B25C2AC71000D7F0E /* Sources */,
+				E2240A9925C2AE8C000D7F0E /* Tests */,
 				E22409C725C2A403000D7F0E /* Products */,
 				E2240A5125C2AA2F000D7F0E /* Frameworks */,
 			);
@@ -112,29 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				E22409C625C2A403000D7F0E /* ALActionController.framework */,
-				E22409CF25C2A403000D7F0E /* ALActionControllerTests.xctest */,
 				E2240A3225C2A558000D7F0E /* ALActionControllerExample.app */,
+				E2240A9825C2AE8C000D7F0E /* ALActionControllerTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E22409C825C2A403000D7F0E /* ALActionController */ = {
-			isa = PBXGroup;
-			children = (
-				E22409C925C2A403000D7F0E /* ALActionController.h */,
-				E2240A4925C2A73C000D7F0E /* ALActionController.swift */,
-				E22409CA25C2A403000D7F0E /* Info.plist */,
-			);
-			path = ALActionController;
-			sourceTree = "<group>";
-		};
-		E22409D325C2A403000D7F0E /* ALActionControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				E22409D425C2A403000D7F0E /* ALActionControllerTests.swift */,
-				E22409D625C2A403000D7F0E /* Info.plist */,
-			);
-			path = ALActionControllerTests;
 			sourceTree = "<group>";
 		};
 		E2240A3325C2A558000D7F0E /* ALActionControllerExample */ = {
@@ -156,6 +139,42 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2240A6B25C2AC71000D7F0E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E2240A6C25C2AC71000D7F0E /* ALActionController */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E2240A6C25C2AC71000D7F0E /* ALActionController */ = {
+			isa = PBXGroup;
+			children = (
+				E22409C925C2A403000D7F0E /* ALActionController.h */,
+				E2240A4925C2A73C000D7F0E /* ALActionController.swift */,
+				E22409CA25C2A403000D7F0E /* Info.plist */,
+			);
+			path = ALActionController;
+			sourceTree = "<group>";
+		};
+		E2240A9925C2AE8C000D7F0E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E2240AA725C2AECF000D7F0E /* ALActionControllerTests */,
+				E2240A9C25C2AE8C000D7F0E /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E2240AA725C2AECF000D7F0E /* ALActionControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2240AA825C2AEEA000D7F0E /* XCTestManifests.swift */,
+				E2240A9A25C2AE8C000D7F0E /* ALActionControllerTests.swift */,
+			);
+			path = ALActionControllerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,24 +209,6 @@
 			productReference = E22409C625C2A403000D7F0E /* ALActionController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E22409CE25C2A403000D7F0E /* ALActionControllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E22409DD25C2A403000D7F0E /* Build configuration list for PBXNativeTarget "ALActionControllerTests" */;
-			buildPhases = (
-				E22409CB25C2A403000D7F0E /* Sources */,
-				E22409CC25C2A403000D7F0E /* Frameworks */,
-				E22409CD25C2A403000D7F0E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E22409D225C2A403000D7F0E /* PBXTargetDependency */,
-			);
-			name = ALActionControllerTests;
-			productName = ALActionControllerTests;
-			productReference = E22409CF25C2A403000D7F0E /* ALActionControllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E2240A3125C2A558000D7F0E /* ALActionControllerExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2240A4325C2A559000D7F0E /* Build configuration list for PBXNativeTarget "ALActionControllerExample" */;
@@ -227,6 +228,24 @@
 			productReference = E2240A3225C2A558000D7F0E /* ALActionControllerExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E2240A9725C2AE8C000D7F0E /* ALActionControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2240AA025C2AE8C000D7F0E /* Build configuration list for PBXNativeTarget "ALActionControllerTests" */;
+			buildPhases = (
+				E2240A9425C2AE8C000D7F0E /* Sources */,
+				E2240A9525C2AE8C000D7F0E /* Frameworks */,
+				E2240A9625C2AE8C000D7F0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2240A9F25C2AE8C000D7F0E /* PBXTargetDependency */,
+			);
+			name = ALActionControllerTests;
+			productName = ALActionControllerTests;
+			productReference = E2240A9825C2AE8C000D7F0E /* ALActionControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,10 +259,10 @@
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
 					};
-					E22409CE25C2A403000D7F0E = {
+					E2240A3125C2A558000D7F0E = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					E2240A3125C2A558000D7F0E = {
+					E2240A9725C2AE8C000D7F0E = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -262,7 +281,7 @@
 			projectRoot = "";
 			targets = (
 				E22409C525C2A403000D7F0E /* ALActionController */,
-				E22409CE25C2A403000D7F0E /* ALActionControllerTests */,
+				E2240A9725C2AE8C000D7F0E /* ALActionControllerTests */,
 				E2240A3125C2A558000D7F0E /* ALActionControllerExample */,
 			);
 		};
@@ -270,13 +289,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		E22409C425C2A403000D7F0E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E22409CD25C2A403000D7F0E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,6 +305,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2240A9625C2AE8C000D7F0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -301,14 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2240A4A25C2A73C000D7F0E /* ALActionController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E22409CB25C2A403000D7F0E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E22409D525C2A403000D7F0E /* ALActionControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,18 +333,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2240A9425C2AE8C000D7F0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2240A9B25C2AE8C000D7F0E /* ALActionControllerTests.swift in Sources */,
+				E2240AA925C2AEEA000D7F0E /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E22409D225C2A403000D7F0E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E22409C525C2A403000D7F0E /* ALActionController */;
-			targetProxy = E22409D125C2A403000D7F0E /* PBXContainerItemProxy */;
-		};
 		E2240A5525C2AA2F000D7F0E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E22409C525C2A403000D7F0E /* ALActionController */;
 			targetProxy = E2240A5425C2AA2F000D7F0E /* PBXContainerItemProxy */;
+		};
+		E2240A9F25C2AE8C000D7F0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = E22409C525C2A403000D7F0E /* ALActionController */;
+			targetProxy = E2240A9E25C2AE8C000D7F0E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -489,7 +510,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ALActionController/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ALActionController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -517,7 +538,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ALActionController/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ALActionController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,44 +552,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		E22409DE25C2A403000D7F0E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LUY4875ZZ2;
-				INFOPLIST_FILE = ALActionControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alobanov11.ALActionControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E22409DF25C2A403000D7F0E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LUY4875ZZ2;
-				INFOPLIST_FILE = ALActionControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alobanov11.ALActionControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -612,6 +595,42 @@
 			};
 			name = Release;
 		};
+		E2240AA125C2AE8C000D7F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LUY4875ZZ2;
+				INFOPLIST_FILE = ALActionControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alobanov11.ALActionControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2240AA225C2AE8C000D7F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LUY4875ZZ2;
+				INFOPLIST_FILE = ALActionControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alobanov11.ALActionControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -633,20 +652,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E22409DD25C2A403000D7F0E /* Build configuration list for PBXNativeTarget "ALActionControllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E22409DE25C2A403000D7F0E /* Debug */,
-				E22409DF25C2A403000D7F0E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E2240A4325C2A559000D7F0E /* Build configuration list for PBXNativeTarget "ALActionControllerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2240A4425C2A559000D7F0E /* Debug */,
 				E2240A4525C2A559000D7F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2240AA025C2AE8C000D7F0E /* Build configuration list for PBXNativeTarget "ALActionControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2240AA125C2AE8C000D7F0E /* Debug */,
+				E2240AA225C2AE8C000D7F0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
