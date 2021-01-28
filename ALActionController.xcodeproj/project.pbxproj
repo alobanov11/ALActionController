@@ -16,6 +16,7 @@
 		E2240A3C25C2A558000D7F0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2240A3A25C2A558000D7F0E /* Main.storyboard */; };
 		E2240A3E25C2A559000D7F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2240A3D25C2A559000D7F0E /* Assets.xcassets */; };
 		E2240A4125C2A559000D7F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2240A3F25C2A559000D7F0E /* LaunchScreen.storyboard */; };
+		E2240A4A25C2A73C000D7F0E /* ALActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2240A4925C2A73C000D7F0E /* ALActionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		E2240A3D25C2A559000D7F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2240A4025C2A559000D7F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2240A4225C2A559000D7F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2240A4925C2A73C000D7F0E /* ALActionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALActionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				E22409C925C2A403000D7F0E /* ALActionController.h */,
+				E2240A4925C2A73C000D7F0E /* ALActionController.swift */,
 				E22409CA25C2A403000D7F0E /* Info.plist */,
 			);
 			path = ALActionController;
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					E22409C525C2A403000D7F0E = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					E22409CE25C2A403000D7F0E = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2240A4A25C2A73C000D7F0E /* ALActionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		E22409DB25C2A403000D7F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LUY4875ZZ2;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alobanov11.ALActionController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		E22409DC25C2A403000D7F0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LUY4875ZZ2;
@@ -486,6 +494,7 @@
 		E22409DE25C2A403000D7F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LUY4875ZZ2;
 				INFOPLIST_FILE = ALActionControllerTests/Info.plist;
@@ -504,6 +513,7 @@
 		E22409DF25C2A403000D7F0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LUY4875ZZ2;
 				INFOPLIST_FILE = ALActionControllerTests/Info.plist;
