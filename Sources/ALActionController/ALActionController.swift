@@ -288,7 +288,7 @@ public final class ALActionController: UIViewController
 			var action = action
 			let originalHandler = action.handler
 			action.handler = { [weak self] in
-				self?.handleDismissTap(originalHandler)
+				self?.dismiss(originalHandler)
 			}
 			return action
 		}
@@ -404,7 +404,11 @@ public final class ALActionController: UIViewController
 	}
 
 	@objc
-	private func handleDismissTap(_ completion: (() -> Void)? = nil) {
+	private func handleDismissTap() {
+		self.dismiss()
+	}
+
+	private func dismiss(_ completion: (() -> Void)? = nil) {
 		self.dismiss(animated: true, completion: completion)
 	}
 }
