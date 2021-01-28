@@ -17,6 +17,8 @@
 		E2240A3E25C2A559000D7F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2240A3D25C2A559000D7F0E /* Assets.xcassets */; };
 		E2240A4125C2A559000D7F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2240A3F25C2A559000D7F0E /* LaunchScreen.storyboard */; };
 		E2240A4A25C2A73C000D7F0E /* ALActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2240A4925C2A73C000D7F0E /* ALActionController.swift */; };
+		E2240A5225C2AA2F000D7F0E /* ALActionController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22409C625C2A403000D7F0E /* ALActionController.framework */; };
+		E2240A5325C2AA2F000D7F0E /* ALActionController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E22409C625C2A403000D7F0E /* ALActionController.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +29,28 @@
 			remoteGlobalIDString = E22409C525C2A403000D7F0E;
 			remoteInfo = ALActionController;
 		};
+		E2240A5425C2AA2F000D7F0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E22409BD25C2A403000D7F0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E22409C525C2A403000D7F0E;
+			remoteInfo = ALActionController;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2240A5625C2AA2F000D7F0E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E2240A5325C2AA2F000D7F0E /* ALActionController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E22409C625C2A403000D7F0E /* ALActionController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALActionController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2240A5225C2AA2F000D7F0E /* ALActionController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +104,7 @@
 				E22409D325C2A403000D7F0E /* ALActionControllerTests */,
 				E2240A3325C2A558000D7F0E /* ALActionControllerExample */,
 				E22409C725C2A403000D7F0E /* Products */,
+				E2240A5125C2AA2F000D7F0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +149,13 @@
 				E2240A4225C2A559000D7F0E /* Info.plist */,
 			);
 			path = ALActionControllerExample;
+			sourceTree = "<group>";
+		};
+		E2240A5125C2AA2F000D7F0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,10 +215,12 @@
 				E2240A2E25C2A558000D7F0E /* Sources */,
 				E2240A2F25C2A558000D7F0E /* Frameworks */,
 				E2240A3025C2A558000D7F0E /* Resources */,
+				E2240A5625C2AA2F000D7F0E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E2240A5525C2AA2F000D7F0E /* PBXTargetDependency */,
 			);
 			name = ALActionControllerExample;
 			productName = ALActionControllerExample;
@@ -295,6 +329,11 @@
 			isa = PBXTargetDependency;
 			target = E22409C525C2A403000D7F0E /* ALActionController */;
 			targetProxy = E22409D125C2A403000D7F0E /* PBXContainerItemProxy */;
+		};
+		E2240A5525C2AA2F000D7F0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E22409C525C2A403000D7F0E /* ALActionController */;
+			targetProxy = E2240A5425C2AA2F000D7F0E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -452,6 +491,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ALActionController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,9 +500,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alobanov11.ALActionController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,6 +519,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ALActionController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,8 +528,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alobanov11.ALActionController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -537,6 +580,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LUY4875ZZ2;
 				INFOPLIST_FILE = ALActionControllerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,7 +588,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alobanov11.ALActionControllerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -556,6 +600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LUY4875ZZ2;
 				INFOPLIST_FILE = ALActionControllerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,7 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alobanov11.ALActionControllerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
