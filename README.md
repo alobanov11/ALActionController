@@ -77,6 +77,7 @@ let actionController = ALActionController(
       height: 54,
       cornerRadius: 10,
       backgroundColor: .init(rgb: 0x3A343C),
+      textColor: .init(rgb: 0x7F7980),
       tintColor: .init(rgb: 0x7F7980),
       selectedTintColor: .init(rgb: 0xB57FFF),
       cancelTintColor: .white,

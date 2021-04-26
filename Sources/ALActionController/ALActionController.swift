@@ -40,9 +40,10 @@ public struct ALItemStyles
 	public let height: CGFloat
 	public let cornerRadius: CGFloat
 	public let backgroundColor: UIColor
-	public let tintColor: UIColor
-	public let selectedTintColor: UIColor
-	public let cancelTintColor: UIColor
+    public let tintColor: UIColor
+	public let textColor: UIColor
+	public let selectedTextColor: UIColor
+	public let cancelTextColor: UIColor
 	public let separatorColor: UIColor
 	public let separatorHeight: CGFloat
 	public let font: UIFont
@@ -54,7 +55,8 @@ public struct ALItemStyles
 		height: CGFloat = 54,
 		cornerRadius: CGFloat = 10,
 		backgroundColor: UIColor = .lightGray,
-		tintColor: UIColor = .black,
+        tintColor: UIColor = .black,
+        textColor: UIColor = .black,
 		selectedTintColor: UIColor = .systemBlue,
 		cancelTintColor: UIColor = .systemBlue,
 		separatorColor: UIColor = UIColor.darkGray.withAlphaComponent(0.1),
@@ -67,9 +69,10 @@ public struct ALItemStyles
 		self.height = height
 		self.cornerRadius = cornerRadius
 		self.backgroundColor = backgroundColor
-		self.tintColor = tintColor
-		self.selectedTintColor = selectedTintColor
-		self.cancelTintColor = cancelTintColor
+        self.tintColor = tintColor
+		self.textColor = textColor
+		self.selectedTextColor = selectedTintColor
+		self.cancelTextColor = cancelTintColor
 		self.separatorColor = separatorColor
 		self.separatorHeight = separatorHeight
 		self.font = font
@@ -118,7 +121,7 @@ final class ALActionCollectionViewCell: UICollectionViewCell
 	}
 
 	private lazy var titleButton: UIButton = {
-		let button = UIButton(type: .system)
+		let button = UIButton(type: .custom)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.addTarget(self, action: #selector(self.handleActionTap), for: .touchUpInside)
 		return button
@@ -162,11 +165,21 @@ final class ALActionCollectionViewCell: UICollectionViewCell
 	) {
 		self.titleButton.setImage(action.icon, for: .normal)
 		self.titleButton.setTitle(action.title, for: .normal)
-		self.titleButton.tintColor = action.style == .cancel
-			? styles.cancelTintColor
-			: action.selected
-			? styles.selectedTintColor
-			: styles.tintColor
+        self.titleButton.setTitleColor(
+            action.style == .cancel
+                ? styles.cancelTextColor
+                : action.selected
+                ? styles.selectedTextColor
+                : styles.textColor,
+            for: .normal
+        )
+        self.titleButton.setTitleColor(
+            action.selected
+                ? styles.textColor
+                : styles.selectedTextColor,
+            for: .highlighted
+        )
+        self.titleButton.tintColor = styles.tintColor
 		self.titleButton.titleLabel?.font = styles.font
 		self.titleButton.contentHorizontalAlignment = action.style == .cancel
 			? .center
