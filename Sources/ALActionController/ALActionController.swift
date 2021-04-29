@@ -181,6 +181,7 @@ final class ALActionCollectionViewCell: UICollectionViewCell
         )
         self.titleButton.tintColor = styles.tintColor
 		self.titleButton.titleLabel?.font = styles.font
+        self.titleButton.imageView?.contentMode = .center
 		self.titleButton.contentHorizontalAlignment = action.style == .cancel
 			? .center
 			: styles.horizontalAlignment
