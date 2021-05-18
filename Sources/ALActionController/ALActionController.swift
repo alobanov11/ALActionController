@@ -9,6 +9,7 @@ public struct ALAction
 {
 	public enum ActionStyle
 	{
+        case destructive
 		case `default`
 		case cancel
 	}
@@ -44,6 +45,7 @@ public struct ALItemStyles
 	public let textColor: UIColor
 	public let selectedTextColor: UIColor
 	public let cancelTextColor: UIColor
+    public let destructiveTextColor: UIColor
 	public let separatorColor: UIColor
 	public let separatorHeight: CGFloat
 	public let font: UIFont
@@ -59,6 +61,7 @@ public struct ALItemStyles
         textColor: UIColor = .black,
 		selectedTintColor: UIColor = .systemBlue,
 		cancelTintColor: UIColor = .systemBlue,
+        destructiveTextColor: UIColor = .systemRed,
 		separatorColor: UIColor = UIColor.darkGray.withAlphaComponent(0.1),
 		separatorHeight: CGFloat = 1,
 		font: UIFont = .systemFont(ofSize: 16),
@@ -73,6 +76,7 @@ public struct ALItemStyles
 		self.textColor = textColor
 		self.selectedTextColor = selectedTintColor
 		self.cancelTextColor = cancelTintColor
+        self.destructiveTextColor = destructiveTextColor
 		self.separatorColor = separatorColor
 		self.separatorHeight = separatorHeight
 		self.font = font
@@ -168,6 +172,8 @@ final class ALActionCollectionViewCell: UICollectionViewCell
         self.titleButton.setTitleColor(
             action.style == .cancel
                 ? styles.cancelTextColor
+                : action.style == .destructive
+                ? styles.destructiveTextColor
                 : action.selected
                 ? styles.selectedTextColor
                 : styles.textColor,
